@@ -37,4 +37,8 @@ console.log(totalVerdi);
 
 //CASE 2
 
-
+//filtrerer ut fra kategorien clothing, så sier eg den skal skrive ut navnene.
+const clothingVarer = products
+    .filter((e) => e.category === "clothing")
+    .map((e) => e.name);
+console.log(clothingVarer);
